@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "keyVaultName": {
+            "value": "MyKeyVaultName"
+        },
+        "secretName": {
+            "value": "MySecretName"
+        },
+        "location": {
+            "value": "westeurope"
+        },
+        "enabledForDeployment": {
+            "value": false
+        },
+        "enabledForDiskEncryption": {
+            "value": false
+        },
+        "enabledForTemplateDeployment": {
+            "value": true
+        },
+        "objectId": {
+            "value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        },
+        "keysPermissions": {
+            "value": [
+                "list",
+                "get"
+            ]
+        },
+        "secretsPermissions": {
+            "value": [
+                "list",
+                "get"
+            ]
+        },
+        "skuName": {
+            "value": "Standard"
+        }
+    }
+}
